@@ -2,7 +2,7 @@
 	position: relative;
 }
 
-.container {
+.container { //title
 	display: flex;
 	flex-direction: column;
 	row-gap: 4px;
@@ -42,9 +42,10 @@
 	outline: 3px solid #000000;
 }
 
+
 .selectWrapper:not([data-is-active='true'])
 	.placeholder:not([data-status='invalid']):hover {
-	outline: 3px solid #000000;
+	outline: 1px solid #FFC802;
 }
 
 .select {
@@ -78,7 +79,12 @@
 }
 
 .option:hover {
-	background: var(--grey, #c4c4c4);
+	 background: var(--gray_hover, #EEEEEE);
+}
+
+.option:active {
+	background: #D7D7D7;
+
 }
 
 @mixin option-color-before {

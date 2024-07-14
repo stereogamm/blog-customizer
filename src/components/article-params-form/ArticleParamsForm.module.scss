@@ -4,8 +4,8 @@
 	width: 616px;
 	height: 100%;
 	overflow: scroll;
-	transform: translate(-616px);
 	transition: transform 0.5s ease;
+	transform: translate(-616px);
 }
 
 .container_open {
@@ -29,4 +29,17 @@
 	display: flex;
 	justify-content: space-between;
 	margin-top: auto;
+}
+
+.header {
+	font-family: 'Open Sans';
+	font-size: 31px;
+	font-weight: 800;
+	line-height: 42.22px;
+	text-align: start;
+	color: #000000;
+}
+
+.spacing {
+	height: calc(1vh + 40px);
 }
