@@ -9,11 +9,12 @@ const meta: Meta<typeof ArrowButton> = {
 export default meta;
 type Story = StoryObj<typeof ArrowButton>;
 
+//скорее всего здесь должна быть какая-то логика для рендера комп в сторибуке
 export const ArrowButtonStory: Story = {
 	render: () => {
 		return (
 			<>
-				<ArrowButton />
+				<ArrowButton onClick={() => alert('клик на кнопку открытия')}/>
 			</>
 		);
 	},
